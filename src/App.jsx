@@ -1,14 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Header from "./components/Header"
+import Formulario from "./components/Formulario"
+import ListaPacientes from "./components/ListaPacientes"
+
+
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div>
-      <p>Prueba</p>
+    <div className="container mx-auto mt-20">
+      <Header />
+      <div className="md:flex mt-12">
+        <Formulario />
+        <ListaPacientes />
+      </div>
     </div>
   )
 }
